@@ -1,0 +1,8 @@
+{
+  "name": "openrtb-types",
+  "license": "MIT",
+  "author": "Oz Weiss <thewizarodofoz@gmail.com",
+  "devDependencies": {
+    "typescript": "^2.5.2"
+  }
+}
