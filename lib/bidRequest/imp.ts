@@ -1,4 +1,13 @@
-import {Currency, PlaybackMethod, Protocol} from "./enums";
+import {
+    AdPosition,
+    APIFramework, CompanionType, ContentDeliveryMethod, CreativeAttribute, Currency, ExpandableDirection, FeedType,
+    MimeType,
+    PlaybackMethod, Protocol,
+    StartDelay,
+    VideoLinearity,
+    VideoPlacementType, VolumeNormalizationMode,
+} from "../common/enums";
+import {BooleanNumber} from "../common/types";
 
 export type Imp = {
     id: string
@@ -10,12 +19,12 @@ export type Imp = {
     pmp: Pmp
     displaymanager: string
     displaymanagerver: string
-    instl: number
+    instl: BooleanNumber
     tagid: string
     bidfloor: number
     bidfloorcur: Currency
-    clickbrowser: number
-    secure: number
+    clickbrowser: BooleanNumber
+    secure: BooleanNumber
     iframebuster: string[]
     exp: number
     ext: any
@@ -35,11 +44,11 @@ export type Banner = {
     battr: number[]
     pos: number
     mimes: MimeType[]
-    topframe: number
-    expdir: number[]
-    api: number[]
+    topframe: BooleanNumber
+    expdir: ExpandableDirection[]
+    api: APIFramework[]
     id: string
-    vcm: number
+    vcm: BooleanNumber
     ext: any
 }
 export type Video = {
@@ -49,22 +58,76 @@ export type Video = {
     protocols: Protocol[]
     w: number
     h: number
-    startdelay: number
-    placement: number
-    linearity: number
-    skip: number
+    startdelay: StartDelay
+    placement: VideoPlacementType
+    linearity: VideoLinearity
+    skip: BooleanNumber
     skipmin: number
     skipafter: number
     sequence: number
-    batter: number[]
+    battr: CreativeAttribute[]
     maxextended: number
     minbitrate: number
     maxbitrate: number
-    boxingallowed: number
+    boxingallowed: BooleanNumber
     playbackmethod: PlaybackMethod
+    delivery: ContentDeliveryMethod
+    pos: AdPosition
+    companionad: Banner[]
+    api: APIFramework[]
+    companiontype: CompanionType[]
+    ext: any
 }
-export type Audio = {}
-export type Native = {}
-export type Pmp = {}
+export type Audio = {
+    mimes: MimeType[]
+    minduration: number
+    maxduration: number
+    protocols: Protocol
+    startdelay: number
+    sequence: number
+    battr: CreativeAttribute[]
+    maxextended: number
+    minbitrate: number
+    maxbitrate: number
+    delivery: ContentDeliveryMethod[]
+    companionad: Banner[]
+    api: APIFramework
+    companiontype: CompanionType[]
+    maxseq: number
+    feed: FeedType[]
+    stitched: BooleanNumber
+    nvol: VolumeNormalizationMode
+    ext: any
+}
+export type Native = {
+    request: string
+    ver: string
+    api: APIFramework
+    battr: CreativeAttribute[]
+    ext: any
+}
 
-export type Format = {}
+export type Pmp = {
+    private_auction: BooleanNumber
+    deals: Deal[]
+    ext: any
+}
+
+export type Deal = {
+    id: string
+    bidfloor: number
+    bidfloorcur: Currency
+    at: number
+    wseat: string[]
+    wadomain: string[]
+    ext: any
+};
+
+export type Format = {
+    w: number
+    h: number
+    wratio: number
+    hratio: number
+    wmin: number
+    ext: any
+}

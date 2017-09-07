@@ -1,0 +1,277 @@
+export enum Currency {
+
+}
+
+export enum MimeType {
+    GIF = 'image/gif',
+    JPG = 'image/jpg',
+    JPEG = 'image/jpeg',
+    PNG = 'image/png',
+    SVG = 'image/svg+xml',
+    WAVE = 'audio/wave',
+    WAV = 'audio/wav',
+    X_WAV = 'audio/x-wav',
+    X_PN_WAV = 'audio/x-pn-wav',
+    WEBM_AUDIO = 'audio/webm',
+    WEBM_VIDEO = 'video/webm',
+    OGG_AUDIO = 'audio/ogg',
+    OGG_VIDEO = 'video/ogg',
+    OGG_APPLICATION = 'application/ogg',
+    X_SHOCKWAVE_FLASH = 'application/x-shockwave-flash',
+    X_MS_WMV = 'video/x-ms-wmv',
+    MP4 = 'video/mp4'
+}
+
+// 5.2
+export enum BannerAdType {
+    XHTML_TEXT = 1,
+    XHTML_BANNER,
+    JAVASCRIPT,
+    IFRAME
+}
+
+// 5.3
+export enum CreativeAttribute {
+    AUDIO_AD_AUTOPLAY = 1,
+    AUDIO_AD_USER_INITIATED,
+    EXPANDABLE_AUTOMATIC,
+    EXPANDABLE_USER_INITIATED_CLICK,
+    EXPANDABLE_USER_INITIATED_ROLLOVER,
+    INBANNER_VIDEO_AD_AUTOPLAY,
+    INBANNER_VIDEO_AD_USER_INITIATED,
+    POP,
+    PROVOCATIVE_OR_SUGGESTIVE_IMAGERY,
+    SHAKY_FLASHING_FLICKERING_EXTREME_ANIMATION_SMILEYS,
+    SURVEYS,
+    TEXT_ONLY,
+    USER_INTERACTIVE,
+    WINDOWS_DIALOG_OR_ALERT_STYLE,
+    HAS_AUDIO_ON_OFF_BUTTON,
+    AD_PROVIDES_SKIP_BUTTON,
+    ADOBE_FLASH
+}
+
+// 5.4
+export enum AdPosition {
+    UNKNOWN,
+    ABOVE_THE_FOLD,
+    BELOW_THE_FOLD = 3,
+    HEADER,
+    FOOTER,
+    SIDEBAR,
+    FULL_SCREEN
+}
+
+// 5.5
+export enum ExpandableDirection {
+    LEFT = 1,
+    RIGHT,
+    UP,
+    DOWN,
+    FULL_SCREEN
+}
+
+// 5.6
+export enum APIFramework {
+    VPAID_1,
+    VPAID_2,
+    MRAID_1,
+    ORMMA,
+    MRAID_2,
+    MRAID_3
+}
+
+// 5.7
+export enum VideoLinearity {
+    LINEAR_OR_IN_STREAM,
+    NON_LINEAR_OR_OVERLAY,
+}
+
+// 5.8
+export enum Protocol {
+    VAST_1 = 1,
+    VAST_2,
+    VAST_3,
+    VAST_1_WRAPPER,
+    VAST_2_WRAPPER,
+    VAST_3_WRAPPER,
+    VAST_4,
+    VAST_4_WRAPPER,
+    DAAST_1,
+    DAAST_1_WRAPPER
+}
+
+// 5.9
+export enum VideoPlacementType {
+    IN_STREAM = 1,
+    IN_BANNER,
+    IN_ARTICLE,
+    IN_FEED,
+    INTERSTITIAL_SLIDER_FLOATING
+}
+
+// 5.10
+export enum PlaybackMethod {
+    PAGE_LOAD_WITH_SOUND_ON,
+    PAGE_LOAD_WITH_SOUND_OFF_BY_DEFAULT,
+    CLICK_WITH_SOUND_ON,
+    MOUSEOVER_WITH_SOUND_ON,
+    ENTERING_VIEWPORT_WITH_SOUND_ON,
+    ENTERING_VIEWPORT_WITH_SOUND_OFF_BY_DEFAULT
+}
+
+// 5.11
+export enum PlaybackCessationMode {
+    VIDEO_COMPLETION,
+    LEAVING_VIEWPORT,
+    LEAVING_VIEWPORT_CONTINUES_AS_A_FLOATING_SLIDER_UNIT,
+}
+
+// 5.12
+export enum StartDelay {
+    GENERIC_POSTROLL = -2,
+    GENERIC_MIDROLL,
+    PREROLL,
+}
+
+// 5.13
+export enum ProductionQuality {
+    UNKNOWN,
+    PROFESSIONALLY_PRODUCED,
+    PROSUMER,
+    USER_GENERATED_UGC
+}
+
+// 5.14
+export enum CompanionType {
+    STATIC_RESOURCE = 1,
+    HTML_RESOURCE,
+    IFRAME_RESOURCE
+}
+
+// 5.15
+export enum ContentDeliveryMethod {
+    STREAMING = 1,
+    PROGRESSIVE,
+    DOWNLOAD
+}
+
+// 5.16
+export enum FeedType {
+    MUSIC_SERVICE = 1,
+    FM_AM_BROADCAST,
+    PODCAST
+}
+
+// 5.17
+export enum VolumeNormalizationMode {
+    NONE,
+    AD_VOLUME_AVERAGE_NORMALIZED_TO_CONTENT,
+    AD_VOLUME_PEAK_NORMALIZED_TO_CONTENT,
+    AD_LOUDNESS_NORMALIZED_TO_CONTENT,
+    CUSTOM_VOLUME_NORMALIZATION,
+}
+
+// 5.18
+export enum ContentContext {
+    VIDEO = 1,
+    GAME,
+    MUSIC,
+    APPLICATION,
+    TEXT,
+    OTHER,
+    UNKNOWN
+}
+
+// 5.19
+export enum IQGMediaRating {
+    ALL_AUDIENCES = 1,
+    EVERYONE_OVER_12,
+    MATURE_AUDIENCES
+}
+
+// 5.20
+export enum LocationType {
+    GPS_LOCATION_SERVICES = 1,
+    IP_ADDRESS,
+    USER_PROVIDED,
+}
+
+// 5.21
+export enum DeviceType {
+    MOBILE_TABLET = 1,
+    PERSONAL_COMPUTER,
+    CONNECTED_TV,
+    PHONE,
+    TABLET,
+    CONNECTED_DEVICE,
+    SET_TOP_BOX
+}
+
+// 5.22
+export enum ConnectionType {
+    UNKNOWN,
+    ETHERNET,
+    WIFI,
+    CELLULAR_NETWORK_UNKNOWN_GENERATION,
+    CELLULAR_NETWORK_2G,
+    CELLULAR_NETWORK_3G,
+    CELLULAR_NETWORK_4G
+}
+
+// 5.23
+export enum IPLocationService {
+    IP2LOCATION,
+    NEUSTAR,
+    MAXMIND,
+    NETACUITY
+}
+
+// 5.24
+export enum NoBidReasonCode {
+    UNKNOWN_ERROR,
+    TECHNICAL_ERROR,
+    INVALID_REQUEST,
+    KNOWN_WEB_SPIDER,
+    SUSPECTED_NON_HUMAN_TRAFFIC,
+    CLOUD_DATA_CENTER_OR_PROXY_IP,
+    UNSUPPORTED_DEVICE,
+    BLOCKED_PUBLISHER_OR_SITE,
+    UNMATCHED_USER,
+    DAILY_READER_CAP_MET,
+    DAILY_DOMAIN_CAP_MET
+}
+
+// 5.25
+export enum LossReasonCodes {
+    BID_WON,
+    INTERNAL_ERROR,
+    IMPRESSION_OPPORTUNITY_EXPIRED,
+    INVALID_BID_RESPONSE,
+    INVALID_DEAL_ID,
+    INVALID_AUCTION_ID,
+    INVALID_ADVERTISER_DOMAIN,
+    MISSING_MARKUP,
+    MISSING_CREATIVE_ID,
+    MISSING_BID_PRICE,
+    _MISSING_MINIMUM_CREATIVE_APPROVAL_DATA,
+    BID_WAS_BELOW_AUCTION_FLOOR,
+    BID_WAS_BELOW_DEAL_FLOOR,
+    LOST_TO_HIGHER_BID,
+    LOST_TO_A_BID_FOR_A_PMP_DEAL,
+    BUYER_SEAT_BLOCKED,
+    CREATIVE_FILTERED_GENERAL_REASON_UNKNOWN,
+    CREATIVE_FILTERED_PENDING_PROCESSING_BY_EXCHANGE,
+    CREATIVE_FILTERED_DISAPPROVED_BY_EXCHANGE,
+    CREATIVE_FILTERED_SIZE_NOT_ALLOWED,
+    CREATIVE_FILTERED_INCORRECT_CREATIVE_FORMAT,
+    CREATIVE_FILTERED_ADVERTISER_EXCLUSIONS,
+    CREATIVE_FILTERED_APP_BUNDLE_EXCLUSIONS,
+    CREATIVE_FILTERED_NOT_SECURE,
+    CREATIVE_FILTERED_LANGUAGE_EXCLUSIONS,
+    CREATIVE_FILTERED_CATEGORY_EXCLUSIONS,
+    CREATIVE_FILTERED_CREATIVE_ATTRIBUTE_EXCLUSIONS,
+    CREATIVE_FILTERED_AD_TYPE_EXCLUSIONS,
+    CREATIVE_FILTERED_ANIMATION_TOO_LONG,
+    CREATIVE_FILTERED_NOT_ALLOWED_IN_PMP_DEAL
+}
