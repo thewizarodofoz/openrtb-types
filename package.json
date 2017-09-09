@@ -1,6 +1,7 @@
 {
   "name": "openrtb-types",
   "description": "AIB's OpenRTB v2.5 spec types and enums in TypeScript",
+  "repository": "https://github.com/thewizarodofoz/openrtb-types",
   "license": "MIT",
   "version": "1.0.0",
   "author": "Oz Weiss <thewizarodofoz@gmail.com",
