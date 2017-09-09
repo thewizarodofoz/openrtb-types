@@ -9,24 +9,24 @@ import {Regs} from "./regs";
 export type BidRequest = {
     id: string
     imp: Imp[]
-    site: Site
-    app: App
-    device: Device
-    user: User
-    test: number
-    at: number
-    tmax: number
-    wseat: string[]
-    bseat: string[]
-    allimps: number
-    cur: string[]
-    wlang: string[]
-    bcat: string[]
-    badv: string[]
-    bapp: string[]
-    source: Source
-    regs: Regs
-    ext: any
+    site?: Site
+    app?: App
+    device?: Device
+    user?: User
+    test?: number
+    at?: number
+    tmax?: number
+    wseat?: string[]
+    bseat?: string[]
+    allimps?: number
+    cur?: string[]
+    wlang?: string[]
+    bcat?: string[]
+    badv?: string[]
+    bapp?: string[]
+    source?: Source
+    regs?: Regs
+    ext?: any
 }
 
 
