@@ -7,3 +7,26 @@ Using npm:
 ```shell
 $ npm i --save openrtb-types
 ```
+
+## Usage
+
+Import needed types and use them to type-guard your code:
+```
+import {SeatBid, Bid, BidResponse} from 'openrtb-types'
+
+
+let bid: Bid = {
+    id: 'abc',
+    impid: 'abc',
+    price: 1.23
+};
+
+let seatBid: SeatBid = {
+    bid: [bid]
+};
+
+let bidResponse: BidResponse = {
+    id: 'abc',
+    seatbid: [seatBid]
+};
+```
