@@ -11,7 +11,7 @@ $ npm i --save openrtb-types
 ## Usage
 
 Import needed types and use them to type-guard your code:
-```
+```ts
 import {SeatBid, Bid, BidResponse} from 'openrtb-types'
 
 
