@@ -1,6 +1,6 @@
 import {Format} from "./format";
 import {BooleanNumber} from "../common/types";
-import {APIFramework, ExpandableDirection} from "../common/enums";
+import {APIFramework, ExpandableDirection, MimeType} from "../common/enums";
 
 export type Banner = {
     format?: Format
