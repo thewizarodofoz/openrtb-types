@@ -1,6 +1,6 @@
 import {
     APIFramework, CompanionType, ContentDeliveryMethod, CreativeAttribute, FeedType,
-    Protocol, VolumeNormalizationMode
+    Protocol, VolumeNormalizationMode, MimeType
 } from "../common/enums";
 import {Banner} from "./banner";
 import {BooleanNumber} from "../common/types";

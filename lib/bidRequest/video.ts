@@ -2,7 +2,7 @@ import {
     AdPosition, APIFramework, CompanionType,
     ContentDeliveryMethod,
     CreativeAttribute, PlaybackMethod, Protocol, StartDelay, VideoLinearity,
-    VideoPlacementType
+    VideoPlacementType, MimeType
 } from "../common/enums";
 import {BooleanNumber} from "../common/types";
 import {Banner} from "./banner";
