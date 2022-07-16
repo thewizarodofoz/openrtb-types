@@ -1,9 +1,9 @@
 import {APIFramework, CreativeAttribute} from "../common/enums";
-import {NativeRequest} from "./nativeRequest";
+import {RequestNative} from "./nativeRequest";
 
 export type Native = {
     request: string
-    requestNative ?: NativeRequest
+    requestNative ?: RequestNative.NativeRequest
     ver?: string
     api?: APIFramework
     battr?: CreativeAttribute[]
