@@ -11,6 +11,7 @@ export {Geo} from "./geo";
 export {Imp} from "./imp";
 export {Metric} from "./metric";
 export {Native} from "./native";
+export {NativeRequest} from "./nativeRequest";
 export {Pmp} from "./pmp";
 export {Producer} from "./producer";
 export {Publisher} from "./publisher";
