@@ -1,8 +1,8 @@
 import { Data } from "./Data";
 import { Image } from "./Image";
 import { Link } from "./Link";
-import { Title } from "./title";
-import { Video } from "./video";
+import { Title } from "./Title";
+import { Video } from "./Video";
 
 // 5.2 Object: Asset
 //

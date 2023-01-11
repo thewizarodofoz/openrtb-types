@@ -1,4 +1,4 @@
-import { ImageAssetType } from "./imageAssetType";
+import { ImageAssetType } from "../ImageAssetType";
 
 // 5.4 Object: Image
 //

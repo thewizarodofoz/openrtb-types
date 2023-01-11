@@ -1,4 +1,4 @@
-import { DataAssetType } from "../dataAssetType";
+import { DataAssetType } from "../DataAssetType";
 
 // 5.5 Object: Data
 //
