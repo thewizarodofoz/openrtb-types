@@ -6,7 +6,7 @@ This package includes all of [IAB's OpenRTB v2.5 spec](https://www.iab.com/wp-co
 
 Using npm:
 
-```shell
+```sh
 $ npm i --save openrtb-types
 ```
 
