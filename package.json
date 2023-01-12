@@ -3,7 +3,7 @@
   "description": "IAB's OpenRTB v2.5 spec types and enums in TypeScript",
   "repository": "https://github.com/missena-corp/openrtb-types",
   "license": "MIT",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "author": "@missena",
   "devDependencies": {
     "typescript": "^4.9.4"
